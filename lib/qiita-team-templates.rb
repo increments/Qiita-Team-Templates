@@ -1,0 +1,1 @@
+require 'qiita/team/templates'
