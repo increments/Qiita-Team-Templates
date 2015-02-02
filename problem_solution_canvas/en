@@ -35,7 +35,6 @@
 
 ## METRICS / PROOF + GOALS
 
+<!-- See also: https://github.com/increments/Qiita-Team-Templates -->
 <script src="https://increments.github.io/Qiita-Team-Templates/dist/js/problem_solution_canvas.js"></script>
-<script>
-  Qiita.Team.renderProblemSolutionCanvas('#item-%{id}');
-</script>
+<script>Qiita.Team.renderProblemSolutionCanvas('#item-%{id}');</script>

@@ -37,8 +37,6 @@
 # Memo
 *自由記述メモ*
 
-<!-- https://increments.github.io/Qiita-Team-Templates/tree/master/lean_canvas/ja.md -->
+<!-- See also: https://github.com/increments/Qiita-Team-Templates -->
 <script src="https://increments.github.io/Qiita-Team-Templates/dist/js/lean_canvas.js"></script>
-<script>
-  Qiita.Team.renderLeanCanvas('#item-%{id}');
-</script>
+<script>Qiita.Team.renderLeanCanvas('#item-%{id}');</script>

@@ -7,7 +7,6 @@
 # Try
 *List how to solve these problems.*
 
+<!-- See also: https://github.com/increments/Qiita-Team-Templates -->
 <script src="https://increments.github.io/Qiita-Team-Templates/dist/js/kpt.js"></script>
-<script>
-  Qiita.Team.renderKpt('#item-%{id}');
-</script>
+<script>Qiita.Team.renderKpt('#item-%{id}');</script>
