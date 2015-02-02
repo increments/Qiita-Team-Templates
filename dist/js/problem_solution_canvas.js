@@ -1,7 +1,6 @@
 /**
  * @name problem_solution_canvas.js
  * @description Render ProblemSolutionCanvas on Qiita:Team.
- * @version 0.1.0
  */
 
 (function (global) {
@@ -9,7 +8,7 @@
         throw 'Qiita.TeamTemplates is required';
     }
 
-    var ns = global.Qiita.Team; // Namespace
+    var ns = global.Qiita.TeamTemplates; // Namespace
 
     if (ns.isRegistered('problem_solution_canvas')) {
         // KPT template has already been registered.
@@ -62,8 +61,8 @@ __p += '<h2>' +
 return __p
 };
 
-    ns.register('problem_solution_canvas', function (solution) {
-        var $item = $(item_id);
+    ns.register('problem_solution_canvas', function (selector) {
+        var $item = $(selector);
 
         var html = '';
         _.each($item.find('h1'), function (h1, i) {

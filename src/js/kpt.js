@@ -31,7 +31,7 @@
     // src/jst/kpt.jst
     kptTemplate = <%= template %>;
 
-    ns.register('ktp', function (selector) {
+    ns.register('kpt', function (selector) {
         var $item, $table, names, data;
         $item = $(selector);
         names = ['keepContent', 'problemContent', 'tryContent'];

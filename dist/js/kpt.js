@@ -1,7 +1,6 @@
 /**
  * @name kpt.js
  * @description Render KPT on Qiita:Team.
- * @version 0.1.0
  */
 
 (function (global) {
@@ -46,7 +45,7 @@ __p += '<table class=\'table table-bordered\'>\n    <tr>\n        <td>\n        
 return __p
 };
 
-    ns.register('ktp', function (selector) {
+    ns.register('kpt', function (selector) {
         var $item, $table, names, data;
         $item = $(selector);
         names = ['keepContent', 'problemContent', 'tryContent'];
