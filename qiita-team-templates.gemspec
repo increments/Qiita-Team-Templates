@@ -1,6 +1,10 @@
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require "qiita/team/templates/version"
+
 Gem::Specification.new do |spec|
   spec.name            = 'qiita-team-templates'
-  spec.version         = '0.1.0'
+  spec.version         = Qiita::Team::Templates::VERSION
   spec.authors         = ['Yuku Takahashi']
   spec.email           = ['yuku@qiita.com']
   spec.summary         = 'Shared templates for teams'

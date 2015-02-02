@@ -1,7 +1,6 @@
 /**
  * @name lean_canvas.js
  * @description Render LeanCanvas on Qiita:Team.
- * @version 0.1.0
  */
 
 (function (global) {

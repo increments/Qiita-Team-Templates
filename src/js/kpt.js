@@ -1,7 +1,6 @@
 /**
  * @name kpt.js
  * @description Render KPT on Qiita:Team.
- * @version 0.1.0
  */
 
 (function (global) {

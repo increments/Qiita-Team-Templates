@@ -1,6 +1,5 @@
 /**
  * @name qiita_team_templates.js
- * @version 0.1.0
  *
  * Qiita.TeamTemplates is initialized as follows:
  *

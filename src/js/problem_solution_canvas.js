@@ -1,7 +1,6 @@
 /**
  * @name problem_solution_canvas.js
  * @description Render ProblemSolutionCanvas on Qiita:Team.
- * @version 0.1.0
  */
 
 (function (global) {
