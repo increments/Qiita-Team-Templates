@@ -1,11 +1,11 @@
 # Keep
-*List your keeping things.*
+*続けたいことを書いてください*
 
 # Problem
-*List your problems.*
+*問題点を列挙してください*
 
 # Try
-*List how to solve these problems.*
+*問題を解決するために取り組みたいことを書いてください*
 
 <script src="https://increments.github.io/Qiita-Team-Templates/dist/js/kpt.js"></script>
 <script>

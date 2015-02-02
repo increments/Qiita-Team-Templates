@@ -1,0 +1,41 @@
+<!-- Page 1 -->
+# *タイトル*
+## CURRENT STATUS
+- *あなたが現在追っている指標を列挙しそれらがここ数週間と比較してどうだったかを列挙してください*
+    - *どのような傾向がありますか？*
+
+## LAST WEEK'S LESSON LEARNED (AND ACCOMPLISHMENTS)
+- *先週学んだことは何ですか？*
+- *先週は何を達成しましたか？*
+- 目標を達成したか: *YES/NO*
+
+## TOP PROBLEMS
+- *最重要課題を3つ列挙し詳細を説明してください*
+- *それらの優先順位を決めてください*
+
+<!-- Page 2 -->
+# *課題 #1*
+## HYPOTHESIZED SOLUTIONS
+- *来週取り組むことができる解決策を列挙し、それらに優先順位をつけてください*
+- *その方法が問題を解決することを助ける、もしくは完全に解決すると思う理由を書いてください*
+
+## METRICS / PROOF + GOALS
+- *課題が解決したかどうかを測るために使う指標を列挙してください*
+- *同様に定性的な条件もあれば列挙してください*
+- *指標の目標を定めてください*
+
+# *課題 #2*
+## HYPOTHESIZED SOLUTIONS
+
+## METRICS / PROOF + GOALS
+
+
+# *課題 #3*
+## HYPOTHESIZED SOLUTIONS
+
+## METRICS / PROOF + GOALS
+
+<script src="https://increments.github.io/Qiita-Team-Templates/dist/js/problem_solution_canvas.js"></script>
+<script>
+  Qiita.Team.renderProblemSolutionCanvas('#item-%{id}');
+</script>

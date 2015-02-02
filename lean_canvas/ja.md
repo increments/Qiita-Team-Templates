@@ -1,0 +1,44 @@
+# Problem
+*最も重要な1から3つの問題を列挙してください*
+
+# Existing Alternatives
+*それらの問題が今日どのように解決されているか書いてください*
+
+# Customer Segments
+*ターゲットになる顧客、ユーザを列挙してください*
+
+# Early Adopters
+*理想的な顧客の特徴を列挙してください*
+
+# Unique Value Proposition
+*ライバルとどこが異なり、何故注目に値するのかを訴えるメッセージを、単文で完結に書いてください*
+
+# High-Level Concept
+*類推を使って説明してください。 例 Flickr = YouTubeの写真版*
+
+# Solution
+*個々の問題について、可能な解決策の大枠を記述してください*
+
+# Channels
+*顧客と接触する方法を列挙してください*
+
+# Revenue Streams
+*マネタイズする方法を列挙してください*
+
+# Cost Structure
+*固定費用と変動費用を列挙してください*
+
+# Key Metrics
+*あなたのビジネスが順調かどうかを測る指標を列挙してください*
+
+# Unfair Advantage
+*競合が簡単には真似できないあなたの強みを書いてください*
+
+# Memo
+*自由記述メモ*
+
+<!-- https://increments.github.io/Qiita-Team-Templates/tree/master/lean_canvas/ja.md -->
+<script src="https://increments.github.io/Qiita-Team-Templates/dist/js/lean_canvas.js"></script>
+<script>
+  Qiita.Team.renderLeanCanvas('#item-%{id}');
+</script>
