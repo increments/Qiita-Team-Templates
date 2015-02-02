@@ -1,6 +1,8 @@
 Qiita:Team Templates
 ====================
 
+[gh-pages](tree/gh-pages) branch contains concrete JavaScript sources.
+
 LeanCanvas Template
 -------------------
 
