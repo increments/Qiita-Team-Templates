@@ -1,0 +1,36 @@
+<!-- Page 1 -->
+# *Title*
+## CURRENT STATUS
+- *List key metrics you're tracking, where they're at, and compare with last few weeks*
+    - *How are things trending?*
+
+## LAST WEEK'S LESSON LEARNED (AND ACCOMPLISHMENTS)
+- *What did you learn last week?*
+- *What was accomplished?*
+- On track: *YES/NO*
+
+## TOP PROBLEMS
+- *List and describe the top three problems.*
+- *Prioritize them.*
+
+<!-- Page 2 -->
+# *Problem #1*
+## HYPOTHESIZED SOLUTIONS
+- *List possible solutions that you'll start working on in the next week. Rank them.*
+- *Why do you believe each solution will help solve or completely solve the problem?*
+
+## METRICS / PROOF + GOALS
+- *List metrics you'll use to measure whether or not the solutions are doing what you expected.*
+- *List proof (qualitative) you'll use as well.*
+- *Define goals for the metric.*
+
+# *Problem #2*
+## HYPOTHESIZED SOLUTIONS
+
+## METRICS / PROOF + GOALS
+
+
+# *Problem #3*
+## HYPOTHESIZED SOLUTIONS
+
+## METRICS / PROOF + GOALS
