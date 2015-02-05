@@ -3,6 +3,20 @@
     <head>
         <title>Qiita:Team templates sample</title>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .template-content {
+                padding-top: 20px;
+                background-color: #f4f4f4;
+                padding: 10px;
+                font-family: sans-serif;
+            }
+            .template-content .table {
+                background-color: #fff;
+            }
+            .markdown-content {
+                padding-top: 20px;
+            }
+        </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -67,8 +81,8 @@
                                 <a href="#leanCanvasMarkdown" data-toggle="tab">Markdown</a>
                             </li>
                         </ul>
-                        <div class="tab-content" style="padding-top: 20px;">
-                            <div id="leanCanvasHTML" class="tab-pane active">
+                        <div class="tab-content">
+                            <div id="leanCanvasHTML" class="tab-pane active template-content">
                                 <h1>
 <span id="problem" class="fragment"></span><a href="#problem"><i class="fa fa-link"></i></a>Problem</h1>
 
@@ -137,7 +151,7 @@
                                 <script src="/Qiita-Team-Templates/dist/js/lean_canvas.js"></script>
                                 <script>Qiita.TeamTemplates.render('lean_canvas', '#leanCanvasHTML');</script>
                             </div>
-                            <div id="leanCanvasMarkdown" class="tab-pane">
+                            <div id="leanCanvasMarkdown" class="tab-pane markdown-content">
                                 <pre># Problem
 *List your top 1-3 problems.*
 
@@ -205,8 +219,8 @@
                                 <a href="#kptMarkdown" data-toggle="tab">Markdown</a>
                             </li>
                         </ul>
-                        <div class="tab-content" style="padding-top: 20px;">
-                            <div id="kptHTML" class="tab-pane active">
+                        <div class="tab-content">
+                            <div id="kptHTML" class="tab-pane active template-content">
                                 <h1>
 <span id="keep" class="fragment"></span><a href="#keep"><i class="fa fa-link"></i></a>Keep</h1>
 
@@ -225,7 +239,7 @@
                                 <script src="/Qiita-Team-Templates/dist/js/kpt.js"></script>
                                 <script>Qiita.TeamTemplates.render('kpt', '#kptHTML');</script>
                             </div>
-                            <div id="kptMarkdown" class="tab-pane">
+                            <div id="kptMarkdown" class="tab-pane markdown-content">
                                 <pre># Keep
 *List your keeping things.*
 
@@ -263,8 +277,8 @@
                                 <a href="#pscMarkdown" data-toggle="tab">Markdown</a>
                             </li>
                         </ul>
-                        <div class="tab-content" style="padding-top: 20px;">
-                            <div id="pscHTML" class="tab-pane active">
+                        <div class="tab-content">
+                            <div id="pscHTML" class="tab-pane active template-content">
                                 
 
 <h1>
@@ -348,7 +362,7 @@
                                 <script src="/Qiita-Team-Templates/dist/js/problem_solution_canvas.js"></script>
                                 <script>Qiita.TeamTemplates.render('problem_solution_canvas', '#pscHTML');</script>
                             </div>
-                            <div id="pscMarkdown" class="tab-pane">
+                            <div id="pscMarkdown" class="tab-pane markdown-content">
                                 <pre><!-- Page 1 -->
 # *Title*
 ## CURRENT STATUS
