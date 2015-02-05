@@ -11,13 +11,9 @@ gulp.task('jst', function () {
       .pipe(gulp.dest('dist/jst'));
 });
 
-var defaultTasks = ['jst'];
-
 // Define template:lean_canvas and template:kpt tasks.
 ['lean_canvas', 'kpt'].forEach(function (name) {
   var taskName = 'template:' + name;
-
-  defaultTasks.push(taskName);
 
   gulp.task(taskName, function () {
     gulp.src('src/js/' + name + '.js')
@@ -30,7 +26,6 @@ var defaultTasks = ['jst'];
   });
 });
 
-defaultTasks.push('template:problem_solution_canvas');
 gulp.task('template:problem_solution_canvas', function () {
   gulp.src('src/js/problem_solution_canvas.js')
       .pipe(data(function () {
@@ -43,7 +38,6 @@ gulp.task('template:problem_solution_canvas', function () {
       .pipe(gulp.dest('dist/js'));
 });
 
-defaultTasks.push('template:html');
 gulp.task('template:html', function () {
   gulp.src('src/html/index.html')
       .pipe(data(function () {
@@ -59,5 +53,3 @@ gulp.task('template:html', function () {
       .pipe(template())
       .pipe(gulp.dest('./'));
 });
-
-gulp.task('default', defaultTasks);
