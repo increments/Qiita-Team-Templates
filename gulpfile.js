@@ -31,7 +31,6 @@ var defaultTasks = ['jst'];
 });
 
 defaultTasks.push('template:problem_solution_canvas');
-
 gulp.task('template:problem_solution_canvas', function () {
   gulp.src('src/js/problem_solution_canvas.js')
       .pipe(data(function () {
@@ -42,6 +41,23 @@ gulp.task('template:problem_solution_canvas', function () {
       }))
       .pipe(template())
       .pipe(gulp.dest('dist/js'));
+});
+
+defaultTasks.push('template:html');
+gulp.task('template:html', function () {
+  gulp.src('src/html/index.html')
+      .pipe(data(function () {
+        return {
+          leanCanvasHTML: fs.readFileSync('dist/html/lean_canvas.html'),
+          leanCanvasMarkdown: fs.readFileSync('src/markdown/lean_canvas.md'),
+          kptHTML: fs.readFileSync('dist/html/kpt.html'),
+          kptMarkdown: fs.readFileSync('src/markdown/kpt.md'),
+          pscHTML: fs.readFileSync('dist/html/problem_solution_canvas.html'),
+          pscMarkdown: fs.readFileSync('src/markdown/problem_solution_canvas.md')
+        };
+      }))
+      .pipe(template())
+      .pipe(gulp.dest('./'));
 });
 
 gulp.task('default', defaultTasks);

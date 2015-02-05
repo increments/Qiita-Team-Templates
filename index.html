@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Qiita:Team templates sample</title>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script>
+            Qiita = {
+                TeamTemplates: {
+                    // Registered functions.
+                    _map: {},
+                    // Queued selectors.
+                    _queues: {},
+                    // Whether the name has already been registered or not.
+                    isRegistered: function (name) {
+                        return name in this._map;
+                    },
+                    // Register the function as the name.
+                    register: function (name, func) {
+                        this._map[name] = func;
+                    },
+                    // Push the selector to a queue to render when corresponding
+                    // template is registered.
+                    render: function (name, selector) {
+                        this._queues[name] || (this._queues[name] = []);
+                        this._queues[name].push(selector);
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <h1>Qiita:Team templates</h1>
+                        <p>
+                            Sample templates for
+                            <a href="https://teams.qiita.com">teams.qiita.com</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- LeanCanvas template -->
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="page-header">
+                        <h1>LeanCanvas template</h1>
+
+                        Templates:
+                        <a href="https://github.com/increments/Qiita-Team-Templates/blob/master/lean_canvas/en">en</a>
+                        /
+                        <a href="https://github.com/increments/Qiita-Team-Templates/blob/master/lean_canvas/ja">ja</a>
+                    </div>
+
+                    <div>
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#leanCanvasHTML" data-toggle="tab">HTML</a>
+                            </li>
+                            <li>
+                                <a href="#leanCanvasMarkdown" data-toggle="tab">Markdown</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" style="padding-top: 20px;">
+                            <div id="leanCanvasHTML" class="tab-pane active">
+                                <h1>
+<span id="problem" class="fragment"></span><a href="#problem"><i class="fa fa-link"></i></a>Problem</h1>
+
+<p><em>List your top 1-3 problems.</em></p>
+
+<h1>
+<span id="existing-alternatives" class="fragment"></span><a href="#existing-alternatives"><i class="fa fa-link"></i></a>Existing Alternatives</h1>
+
+<p><em>List how these problems are solved today.</em></p>
+
+<h1>
+<span id="customer-segments" class="fragment"></span><a href="#customer-segments"><i class="fa fa-link"></i></a>Customer Segments</h1>
+
+<p><em>List your target customers and users.</em></p>
+
+<h1>
+<span id="early-adopters" class="fragment"></span><a href="#early-adopters"><i class="fa fa-link"></i></a>Early Adopters</h1>
+
+<p><em>List the characteristics of your ideal customers.</em></p>
+
+<h1>
+<span id="unique-value-proposition" class="fragment"></span><a href="#unique-value-proposition"><i class="fa fa-link"></i></a>Unique Value Proposition</h1>
+
+<p><em>Single, clear, compelling message that states why you are different and worth paying attention.</em></p>
+
+<h1>
+<span id="high-level-concept" class="fragment"></span><a href="#high-level-concept"><i class="fa fa-link"></i></a>High-Level Concept</h1>
+
+<p><em>List your X for Y analogy e.g. YouTube = Flickr for videos.</em></p>
+
+<h1>
+<span id="solution" class="fragment"></span><a href="#solution"><i class="fa fa-link"></i></a>Solution</h1>
+
+<p><em>Outline a possible solution for each problem.</em></p>
+
+<h1>
+<span id="channels" class="fragment"></span><a href="#channels"><i class="fa fa-link"></i></a>Channels</h1>
+
+<p><em>List your path to customers (inbound or outbound).</em></p>
+
+<h1>
+<span id="revenue-streams" class="fragment"></span><a href="#revenue-streams"><i class="fa fa-link"></i></a>Revenue Streams</h1>
+
+<p><em>List your sources of revenue.</em></p>
+
+<h1>
+<span id="cost-structure" class="fragment"></span><a href="#cost-structure"><i class="fa fa-link"></i></a>Cost Structure</h1>
+
+<p><em>List your fixed and variable costs.</em></p>
+
+<h1>
+<span id="key-metrics" class="fragment"></span><a href="#key-metrics"><i class="fa fa-link"></i></a>Key Metrics</h1>
+
+<p><em>List the key numbers that tell you how your business is doing.</em></p>
+
+<h1>
+<span id="unfair-advantage" class="fragment"></span><a href="#unfair-advantage"><i class="fa fa-link"></i></a>Unfair Advantage</h1>
+
+<p><em>Something that cannot easily be bought or copied.</em></p>
+
+<h1>
+<span id="memo" class="fragment"></span><a href="#memo"><i class="fa fa-link"></i></a>Memo</h1>
+
+<p><em>Feel free to use.</em></p>
+
+                                <script src="/Qiita-Team-Templates/dist/js/lean_canvas.js"></script>
+                                <script>Qiita.TeamTemplates.render('lean_canvas', '#leanCanvasHTML');</script>
+                            </div>
+                            <div id="leanCanvasMarkdown" class="tab-pane">
+                                <pre># Problem
+*List your top 1-3 problems.*
+
+# Existing Alternatives
+*List how these problems are solved today.*
+
+# Customer Segments
+*List your target customers and users.*
+
+# Early Adopters
+*List the characteristics of your ideal customers.*
+
+# Unique Value Proposition
+*Single, clear, compelling message that states why you are different and worth paying attention.*
+
+# High-Level Concept
+*List your X for Y analogy e.g. YouTube = Flickr for videos.*
+
+# Solution
+*Outline a possible solution for each problem.*
+
+# Channels
+*List your path to customers (inbound or outbound).*
+
+# Revenue Streams
+*List your sources of revenue.*
+
+# Cost Structure
+*List your fixed and variable costs.*
+
+# Key Metrics
+*List the key numbers that tell you how your business is doing.*
+
+# Unfair Advantage
+*Something that cannot easily be bought or copied.*
+
+# Memo
+*Feel free to use.*
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LeanCanvas template END -->
+
+            <!-- KPT template -->
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="page-header">
+                        <h1>KPT template</h1>
+
+                        Templates:
+                        <a href="https://github.com/increments/Qiita-Team-Templates/blob/master/kpt/en">en</a>
+                        /
+                        <a href="https://github.com/increments/Qiita-Team-Templates/blob/master/kpt/ja">ja</a>
+                    </div>
+
+                    <div>
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#kptHTML" data-toggle="tab">HTML</a>
+                            </li>
+                            <li>
+                                <a href="#kptMarkdown" data-toggle="tab">Markdown</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" style="padding-top: 20px;">
+                            <div id="kptHTML" class="tab-pane active">
+                                <h1>
+<span id="keep" class="fragment"></span><a href="#keep"><i class="fa fa-link"></i></a>Keep</h1>
+
+<p><em>List your keeping things.</em></p>
+
+<h1>
+<span id="problem" class="fragment"></span><a href="#problem"><i class="fa fa-link"></i></a>Problem</h1>
+
+<p><em>List your problems.</em></p>
+
+<h1>
+<span id="try" class="fragment"></span><a href="#try"><i class="fa fa-link"></i></a>Try</h1>
+
+<p><em>List how to solve these problems.</em></p>
+
+                                <script src="/Qiita-Team-Templates/dist/js/kpt.js"></script>
+                                <script>Qiita.TeamTemplates.render('kpt', '#kptHTML');</script>
+                            </div>
+                            <div id="kptMarkdown" class="tab-pane">
+                                <pre># Keep
+*List your keeping things.*
+
+# Problem
+*List your problems.*
+
+# Try
+*List how to solve these problems.*
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- KPT template END -->
+
+            <!-- ProblemSolutionCanvas template -->
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="page-header">
+                        <h1>ProblemSolutionCanvas template</h1>
+
+                        Templates:
+                        <a href="https://github.com/increments/Qiita-Team-Templates/blob/master/problem_solution_canvas/en">en</a>
+                        /
+                        <a href="https://github.com/increments/Qiita-Team-Templates/blob/master/problem_solution_canvas/ja">ja</a>
+                    </div>
+
+                    <div>
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#pscHTML" data-toggle="tab">HTML</a>
+                            </li>
+                            <li>
+                                <a href="#pscMarkdown" data-toggle="tab">Markdown</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" style="padding-top: 20px;">
+                            <div id="pscHTML" class="tab-pane active">
+                                
+
+<h1>
+<span id="title" class="fragment"></span><a href="#title"><i class="fa fa-link"></i></a><em>Title</em>
+</h1>
+
+<h2>
+<span id="current-status" class="fragment"></span><a href="#current-status"><i class="fa fa-link"></i></a>CURRENT STATUS</h2>
+
+<ul>
+<li>
+<em>List key metrics you're tracking, where they're at, and compare with last few weeks</em>
+
+<ul>
+<li><em>How are things trending?</em></li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<span id="last-weeks-lesson-learned-and-accomplishments" class="fragment"></span><a href="#last-weeks-lesson-learned-and-accomplishments"><i class="fa fa-link"></i></a>LAST WEEK'S LESSON LEARNED (AND ACCOMPLISHMENTS)</h2>
+
+<ul>
+<li><em>What did you learn last week?</em></li>
+<li><em>What was accomplished?</em></li>
+<li>On track: <em>YES/NO</em>
+</li>
+</ul>
+
+<h2>
+<span id="top-problems" class="fragment"></span><a href="#top-problems"><i class="fa fa-link"></i></a>TOP PROBLEMS</h2>
+
+<ul>
+<li><em>List and describe the top three problems.</em></li>
+<li><em>Prioritize them.</em></li>
+</ul>
+
+
+
+<h1>
+<span id="problem-1" class="fragment"></span><a href="#problem-1"><i class="fa fa-link"></i></a><em>Problem #1</em>
+</h1>
+
+<h2>
+<span id="hypothesized-solutions" class="fragment"></span><a href="#hypothesized-solutions"><i class="fa fa-link"></i></a>HYPOTHESIZED SOLUTIONS</h2>
+
+<ul>
+<li><em>List possible solutions that you'll start working on in the next week. Rank them.</em></li>
+<li><em>Why do you believe each solution will help solve or completely solve the problem?</em></li>
+</ul>
+
+<h2>
+<span id="metrics--proof--goals" class="fragment"></span><a href="#metrics--proof--goals"><i class="fa fa-link"></i></a>METRICS / PROOF + GOALS</h2>
+
+<ul>
+<li><em>List metrics you'll use to measure whether or not the solutions are doing what you expected.</em></li>
+<li><em>List proof (qualitative) you'll use as well.</em></li>
+<li><em>Define goals for the metric.</em></li>
+</ul>
+
+<h1>
+<span id="problem-2" class="fragment"></span><a href="#problem-2"><i class="fa fa-link"></i></a><em>Problem #2</em>
+</h1>
+
+<h2>
+<span id="hypothesized-solutions-1" class="fragment"></span><a href="#hypothesized-solutions-1"><i class="fa fa-link"></i></a>HYPOTHESIZED SOLUTIONS</h2>
+
+<h2>
+<span id="metrics--proof--goals-1" class="fragment"></span><a href="#metrics--proof--goals-1"><i class="fa fa-link"></i></a>METRICS / PROOF + GOALS</h2>
+
+<h1>
+<span id="problem-3" class="fragment"></span><a href="#problem-3"><i class="fa fa-link"></i></a><em>Problem #3</em>
+</h1>
+
+<h2>
+<span id="hypothesized-solutions-2" class="fragment"></span><a href="#hypothesized-solutions-2"><i class="fa fa-link"></i></a>HYPOTHESIZED SOLUTIONS</h2>
+
+<h2>
+<span id="metrics--proof--goals-2" class="fragment"></span><a href="#metrics--proof--goals-2"><i class="fa fa-link"></i></a>METRICS / PROOF + GOALS</h2>
+
+                                <script src="/Qiita-Team-Templates/dist/js/problem_solution_canvas.js"></script>
+                                <script>Qiita.TeamTemplates.render('problem_solution_canvas', '#pscHTML');</script>
+                            </div>
+                            <div id="pscMarkdown" class="tab-pane">
+                                <pre><!-- Page 1 -->
+# *Title*
+## CURRENT STATUS
+- *List key metrics you're tracking, where they're at, and compare with last few weeks*
+    - *How are things trending?*
+
+## LAST WEEK'S LESSON LEARNED (AND ACCOMPLISHMENTS)
+- *What did you learn last week?*
+- *What was accomplished?*
+- On track: *YES/NO*
+
+## TOP PROBLEMS
+- *List and describe the top three problems.*
+- *Prioritize them.*
+
+<!-- Page 2 -->
+# *Problem #1*
+## HYPOTHESIZED SOLUTIONS
+- *List possible solutions that you'll start working on in the next week. Rank them.*
+- *Why do you believe each solution will help solve or completely solve the problem?*
+
+## METRICS / PROOF + GOALS
+- *List metrics you'll use to measure whether or not the solutions are doing what you expected.*
+- *List proof (qualitative) you'll use as well.*
+- *Define goals for the metric.*
+
+# *Problem #2*
+## HYPOTHESIZED SOLUTIONS
+
+## METRICS / PROOF + GOALS
+
+
+# *Problem #3*
+## HYPOTHESIZED SOLUTIONS
+
+## METRICS / PROOF + GOALS
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ProblemSolutionCanvas template END -->
+        </div>
+
+        <script src="/Qiita-Team-Templates/vendor/assets/javascripts/qiita_team_templates.js"></script>
+    </body>
+</html>
+<!-- vim: filetype=jst
