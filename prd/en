@@ -1,0 +1,43 @@
+Author：%{me} (%{id})
+Created at：%{Year}/%{month}/%{day}
+
+
+# Overview
+Overview of this PRD.
+
+# Background (Optional)
+
+
+# Product Principles
+Describe of the product concept.  In case when you need to decide what to pick and what to throw away, or prioritize tasks, this is the base.
+
+# Scope
+Describe the product goal and non goal.
+
+
+# KPI
+
+# Target Users
+
+# Use Cases
+
+# Market Analysis
+
+# Competitive Analysis
+
+# Functional Requirements
+
+# UX Requirements
+## UI Mockup (Optional)
+
+# Other Technical Requirements
+## System Requirements
+## Security Requirements
+## Privacy Requirements
+## Performance Requirements
+
+# Release Schedule and Milestone
+## Test Plan
+Necessity of dogfooding
+
+# Go-to-market plan
